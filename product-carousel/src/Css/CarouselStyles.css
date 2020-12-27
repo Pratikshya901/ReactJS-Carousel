@@ -1,0 +1,28 @@
+.carouselWrapper {
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  box-sizing: border-box;
+  height: 300px;
+  width: 800px;
+  padding: 0px;
+  perspective: 600px;
+  margin-left: 300px;
+  position: relative;
+}
+
+.imgWrap {
+  position: "absolute";
+  top: 0;
+  left: 0;
+}
+.imgWrap:hover {
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+.notShow {
+  display: none;
+}

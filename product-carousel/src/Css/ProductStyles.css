@@ -1,11 +1,61 @@
+.h1 {
+  background: linear-gradient(to right, #243742 85%, #1c87c9 15%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 100px 0px 50px;
+  text-align: right;
+  width: 60%;
+  float: left;
+}
+.categoryBtn {
+  margin-right: 300px;
+  margin-top: 130px;
+  width: 200px;
+  height: 30px;
+  color: #243742;
+  font-family: serif;
+  border: none;
+  font-size: 18px;
+}
+.categoryBtn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.categoryBtn:active,
+.categoryBtn:focus {
+  color: #1c87c9;
+}
+.selectionBtn {
+  width: 50%;
+  height: 30px;
+  border: none;
+  color: #243742;
+  font-family: serif;
+  font-size: 16px;
+}
+.selectionBtn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  color: #1c87c9;
+}
+.selectionBtn:active,
+.selectionBtn:focus {
+  color: #1c87c9;
+}
 .App {
   text-align: Center;
   background-color: #e6ffff;
-  height: 1000px;
 }
-
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 20px;
+}
 .image-class {
-  height: 40vmin;
+  height: 30vmin;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .App-logo {
@@ -36,4 +86,55 @@
   to {
     transform: rotate(360deg);
   }
+}
+.card {
+  position: relative;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #fff;
+  -webkit-transition: -webkit-box-shadow 0.25s;
+  transition: -webkit-box-shadow 0.25s;
+  transition: box-shadow 0.25s;
+  transition: box-shadow 0.25s, -webkit-box-shadow 0.25s;
+  border-radius: 2px;
+  height: 300px;
+  width: 200px;
+}
+.card-image {
+  position: relative;
+  height: 50%;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.card-image img {
+  display: block;
+  border-radius: 2px 2px 0 0;
+  position: relative;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 50%;
+}
+
+img {
+  border-style: none;
+}
+
+.card-content {
+  padding: 34px;
+  border-radius: 0 0 2px 2px;
+}
+.card-description {
+  text-align: left;
+  color: green;
+  font-size: 14px;
+}
+
+.card-title {
+  display: block;
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
 }
